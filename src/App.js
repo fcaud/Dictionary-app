@@ -9,9 +9,6 @@ function App() {
           <div className="col">
             <p>Hello world</p>
           </div>
-          <div className="col">
-            <p>Hello world</p>
-          </div>
         </div>
       </header>
     </div>
