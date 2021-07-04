@@ -1,16 +1,16 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Search from "./Search.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="row">
-          <div className="col">
-            <p>Hello world</p>
-          </div>
-        </div>
-      </header>
+      <div className="container">
+        <header className="App-header"></header>
+        <body>
+          <Search />
+        </body>
+      </div>
     </div>
   );
 }
