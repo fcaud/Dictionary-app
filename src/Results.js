@@ -2,7 +2,6 @@ import React from "react";
 import Definitions from "./Definitions";
 
 export default function Results(props) {
-  console.log(props.results);
   const results = props.results;
 
   if (props.results) {

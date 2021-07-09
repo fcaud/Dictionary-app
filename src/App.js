@@ -7,9 +7,14 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header"></header>
-        <body>
+        <div>
           <Search />
-        </body>
+        </div>
+        <footer>
+          <a href="https://github.com/fcaud/Dictionary-app">
+            coded by Freya Caudwell
+          </a>
+        </footer>
       </div>
     </div>
   );
