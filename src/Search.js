@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 
 export default function Search() {
   const [word, setWord] = useState("");
+  const [result, setResult] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -17,7 +19,7 @@ export default function Search() {
   }
 
   function handleApiCall(response) {
-    console.log(response);
+    setResult(response.data[0]);
   }
 
   return (
@@ -30,6 +32,7 @@ export default function Search() {
         ></input>
         <input type="submit"></input>
       </form>
+      <Results results={result} />
     </div>
   );
 }
