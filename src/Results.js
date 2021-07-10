@@ -1,25 +1,19 @@
 import React from "react";
 import Definitions from "./Definitions";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
+import Phonetics from "./Phonetics";
 
 export default function Results(props) {
   const results = props.results;
+  console.log(results.phonetics);
 
   if (props.results) {
     return (
       <div>
         <h2>{results.word}</h2>
         {results.phonetics.map((phonetics, index) => {
-          const audioElement = new Audio(phonetics.audio);
           return (
             <div key={index}>
-              <button onClick={() => audioElement.play()}>
-                <FontAwesomeIcon icon={faVolumeUp} />
-              </button>
-              <p>
-                <em>{phonetics.text}</em>
-              </p>
+              <Phonetics phonetics={phonetics} />
             </div>
           );
         })}
