@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import "./Search.css";
 
 export default function Search() {
   const [word, setWord] = useState("");
@@ -24,14 +25,16 @@ export default function Search() {
 
   return (
     <div className="Search">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Enter word..."
-          onChange={handleSearchText}
-        ></input>
-        <input type="submit"></input>
-      </form>
+      <div className="section">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Enter word..."
+            onChange={handleSearchText}
+          ></input>
+          <input type="submit"></input>
+        </form>
+      </div>
       <Results results={result} />
     </div>
   );
