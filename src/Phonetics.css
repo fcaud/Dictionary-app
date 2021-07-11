@@ -1,0 +1,18 @@
+.Phonetics button {
+  color: #182928;
+  background-color: #5da8a7;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  transition: 150ms ease-in-out;
+}
+
+.Phonetics button:hover {
+  background-color: #467e7d;
+  cursor: pointer;
+}
+
+.Phonetics p {
+  margin: 5px 0;
+}

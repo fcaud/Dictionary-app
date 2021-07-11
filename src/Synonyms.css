@@ -1,0 +1,17 @@
+.Synonyms .col-2 {
+  background-color: #5da8a7;
+  margin: 3px 5px;
+  border-radius: 4px;
+  padding: 2px 7px;
+  text-align: center;
+}
+
+.Synonyms .description {
+  background-color: #a3d2ca;
+}
+
+.Synonyms button {
+  background-color: #5da8a7;
+  border: none;
+  color: #182928;
+}

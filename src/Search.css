@@ -1,4 +1,39 @@
 .Search .section {
-  background-color: aqua;
+  background-color: #a3d2ca;
   margin: 10px;
+  border-radius: 4px;
+  display: block;
+  margin: 10px auto;
+  width: 900px;
+  max-width: 90%;
+  padding: 4px 25px;
+}
+
+.Search .col {
+  flex-sgrow: 0.5;
+  max-width: fit-content;
+}
+
+.Search .search-input {
+  max-width: 80%;
+  width: 800px;
+  margin: 1%;
+  border-radius: 4px;
+  background-color: #f7f3e9;
+  border: solid 2px #5da8a7;
+}
+
+.Search .submit-button {
+  max-width: 17%;
+  width: 400px;
+  border-radius: 4px;
+  background-color: #5da8a7;
+  border: none;
+  color: #182928;
+  transition: 150ms ease-in-out;
+  padding: 2px;
+}
+.Search .submit-button:hover {
+  background-color: #467e7d;
+  cursor: pointer;
 }

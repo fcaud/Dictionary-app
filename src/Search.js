@@ -31,8 +31,9 @@ export default function Search() {
             type="search"
             placeholder="Enter word..."
             onChange={handleSearchText}
+            className="search-input"
           ></input>
-          <input type="submit"></input>
+          <input type="submit" className="submit-button"></input>
         </form>
       </div>
       <Results results={result} />

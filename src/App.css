@@ -1,2 +1,19 @@
 .App {
+  background-color: #f7f3e9;
+  color: #182928;
+}
+
+.App h1,
+.App h2,
+.App h3 {
+  color: #f05945;
+}
+
+.App footer {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.App a {
+  color: #182928;
 }
