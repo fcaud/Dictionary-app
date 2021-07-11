@@ -22,7 +22,10 @@ export default function Results(props) {
         {results.meanings.map((meanings, index) => {
           return (
             <div key={index}>
-              <Definitions definitions={meanings} />
+              <Definitions
+                definitions={meanings}
+                synonymLookUp={props.synonymLookUp}
+              />
             </div>
           );
         })}

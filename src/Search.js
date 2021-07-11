@@ -9,9 +9,12 @@ export default function Search() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    callApi(word);
+  }
 
+  function callApi(searchWord) {
     // documentation: https://dictionaryapi.dev/
-    const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${word}`;
+    const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${searchWord}`;
     axios.get(apiUrl).then(handleApiCall);
   }
 
@@ -36,7 +39,12 @@ export default function Search() {
           <input type="submit" className="submit-button"></input>
         </form>
       </div>
-      <Results results={result} />
+      <Results
+        results={result}
+        synonymLookUp={(synonym) => {
+          callApi(synonym);
+        }}
+      />
     </div>
   );
 }

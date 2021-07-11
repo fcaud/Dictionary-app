@@ -12,7 +12,10 @@ export default function Synonyms(props) {
           return (
             <div className="col-2" key={index}>
               <button
-              // onclick={() => {}}
+                onClick={(event) => {
+                  event.preventDefault();
+                  props.synonymLookUp(synonym);
+                }}
               >
                 {synonym}
               </button>
